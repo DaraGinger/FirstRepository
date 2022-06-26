@@ -17,9 +17,9 @@
 
             switch (userChoice)
             {
-                case 1: (); break;
+                case 1: GetFlowers(); break;
                 case 2: AddFlowers(); break;
-                case 3: GetUpdateFlowers(); break;
+                case 3: UpdateFlowers(); break;
                 default: break;
             }
         }
@@ -37,7 +37,7 @@
 
             return rose;
 
-            Console.WriteLine($"{rose.FlowerId} \t\t {rose.FlowerName} \t\t {rose.FlowerType} \t\t {rose.FlowerPodType} \t\t {rose.FlowerSize} \t\t {rose.FlowerPrice}$");
+            
         }
 
         public static Flowers Carnation()
@@ -53,7 +53,6 @@
             
             return carnation;
 
-            Console.WriteLine($"{carnation.FlowerId} \t\t {carnation.FlowerName} \t\t {carnation.FlowerType} \t\t {carnation.FlowerPodType} \t\t {carnation.FlowerSize} \t\t {carnation.FlowerPrice}$");
         }
 
         public static Flowers Cornflower()
@@ -69,14 +68,20 @@
 
            return cornflower;
 
-            Console.WriteLine($"{cornflower.FlowerId} \t\t {cornflower.FlowerName} \t\t {cornflower.FlowerType} \t\t {cornflower.FlowerPodType} \t\t {cornflower.FlowerSize} \t\t {cornflower.FlowerPrice}$");
+            
         }
 
         public static void GetFlowers()
         {
-           
-            var
 
+            var rose = Rose();
+            var carnation = Carnation();
+            var cornflower = Cornflower();
+
+            Console.WriteLine("Id: \t\t Name: \t\t Type: \t\t Podtype: \t\t Size: \t\t Price:");
+            Console.WriteLine($"{rose.FlowerId} \t\t {rose.FlowerName} \t\t {rose.FlowerType} \t\t {rose.FlowerPodType} \t\t {rose.FlowerSize} \t\t {rose.FlowerPrice}$");
+            Console.WriteLine($"{carnation.FlowerId} \t\t {carnation.FlowerName} \t\t {carnation.FlowerType} \t\t {carnation.FlowerPodType} \t\t {carnation.FlowerSize} \t\t {carnation.FlowerPrice}$");
+            Console.WriteLine($"{cornflower.FlowerId} \t\t {cornflower.FlowerName} \t\t {cornflower.FlowerType} \t\t {cornflower.FlowerPodType} \t\t {cornflower.FlowerSize} \t\t {cornflower.FlowerPrice}$");
         }
 
         
@@ -102,28 +107,46 @@
             Flowers updateFlower = new Flowers();
             ValidationFlowers validationFlowers2 = new ValidationFlowers();
 
-            updateFlower.FlowerId = validationFlowers2.ValidationFlowerId(Int32.Parse(Console.ReadLine()));
-            updateFlower.FlowerName = validationFlowers2.ValidationFlowerName(Console.ReadLine());
-            updateFlower.FlowerType = Console.ReadLine();
-            updateFlower.FlowerPodType = Console.ReadLine();
-            updateFlower.FlowerSize = Int32.Parse(Console.ReadLine());
-            updateFlower.FlowerPrice = Double.Parse(Console.ReadLine());
-            
-            return updateFlower;
-        }
+            Console.WriteLine("What doy want to update? \n 1-Rose \n 2-Carnation \n 3-Cornflower");
 
-        public static void GetUpdateFlowers()
-        {
-            Console.WriteLine("What do you update? \n 1-Rose \n 2-Carnation \n 3-Cornflower");
+            int whatToUpdate = Int32.Parse(Console.ReadLine());
 
-            int choiceUodate = Int32.Parse(Console.ReadLine());
-
-            switch(choiceUodate)
+            if (whatToUpdate == 1)
             {
-                case 1:GetUpdateFlowers(); break;
-                case 2:GetUpdateFlowers(); break;
-                case 3:GetUpdateFlowers(); break;
+
+                updateFlower.FlowerId = validationFlowers2.ValidationFlowerId(Int32.Parse(Console.ReadLine()));
+                updateFlower.FlowerName = validationFlowers2.ValidationFlowerName(Console.ReadLine());
+                updateFlower.FlowerType = Console.ReadLine();
+                updateFlower.FlowerPodType = Console.ReadLine();
+                updateFlower.FlowerSize = Int32.Parse(Console.ReadLine());
+                updateFlower.FlowerPrice = Double.Parse(Console.ReadLine());
+
             }
+
+            if (whatToUpdate == 2)
+            {
+
+                updateFlower.FlowerId = validationFlowers2.ValidationFlowerId(Int32.Parse(Console.ReadLine()));
+                updateFlower.FlowerName = validationFlowers2.ValidationFlowerName(Console.ReadLine());
+                updateFlower.FlowerType = Console.ReadLine();
+                updateFlower.FlowerPodType = Console.ReadLine();
+                updateFlower.FlowerSize = Int32.Parse(Console.ReadLine());
+                updateFlower.FlowerPrice = Double.Parse(Console.ReadLine());
+
+            }
+
+            if (whatToUpdate == 3)
+            {
+
+                updateFlower.FlowerId = validationFlowers2.ValidationFlowerId(Int32.Parse(Console.ReadLine()));
+                updateFlower.FlowerName = validationFlowers2.ValidationFlowerName(Console.ReadLine());
+                updateFlower.FlowerType = Console.ReadLine();
+                updateFlower.FlowerPodType = Console.ReadLine();
+                updateFlower.FlowerSize = Int32.Parse(Console.ReadLine());
+                updateFlower.FlowerPrice = Double.Parse(Console.ReadLine());
+
+            }
+            return updateFlower;
         }
     }
 }

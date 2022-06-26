@@ -34,6 +34,7 @@
                 {
                     Console.Write(triangle[i, j]);
                 }
+                Console.WriteLine();
             }
 
             Console.WriteLine("Welcome to the flower shop!");

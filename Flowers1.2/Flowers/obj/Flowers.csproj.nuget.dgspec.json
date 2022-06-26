@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\Дарина\\source\\repos\\Flowers1.2\\Flowers\\Flowers.csproj": {}
+    "C:\\Users\\Дарина\\Source\\Repos\\FirstRepository\\Flowers1.2\\Flowers\\Flowers.csproj": {}
   },
   "projects": {
-    "E:\\Users\\Дарина\\source\\repos\\Flowers1.2\\Flowers\\Flowers.csproj": {
+    "C:\\Users\\Дарина\\Source\\Repos\\FirstRepository\\Flowers1.2\\Flowers\\Flowers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Дарина\\source\\repos\\Flowers1.2\\Flowers\\Flowers.csproj",
+        "projectUniqueName": "C:\\Users\\Дарина\\Source\\Repos\\FirstRepository\\Flowers1.2\\Flowers\\Flowers.csproj",
         "projectName": "Flowers",
-        "projectPath": "E:\\Users\\Дарина\\source\\repos\\Flowers1.2\\Flowers\\Flowers.csproj",
+        "projectPath": "C:\\Users\\Дарина\\Source\\Repos\\FirstRepository\\Flowers1.2\\Flowers\\Flowers.csproj",
         "packagesPath": "C:\\Users\\Дарина\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Дарина\\source\\repos\\Flowers1.2\\Flowers\\obj\\",
+        "outputPath": "C:\\Users\\Дарина\\Source\\Repos\\FirstRepository\\Flowers1.2\\Flowers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
